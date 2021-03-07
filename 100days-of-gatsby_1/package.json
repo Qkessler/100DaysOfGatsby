@@ -1,0 +1,22 @@
+{
+  "name": "100days-of-gatsby_1",
+  "version": "1.0.0",
+  "private": true,
+  "description": "100DaysOfGatsby_1",
+  "author": "Enrique Kessler Martínez",
+  "keywords": [
+    "gatsby"
+  ],
+  "scripts": {
+    "develop": "gatsby develop",
+    "start": "gatsby develop",
+    "build": "gatsby build",
+    "serve": "gatsby serve",
+    "clean": "gatsby clean"
+  },
+  "dependencies": {
+    "gatsby": "^3.0.1",
+    "react": "^17.0.1",
+    "react-dom": "^17.0.1"
+  }
+}
