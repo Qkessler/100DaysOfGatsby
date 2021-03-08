@@ -1,0 +1,44 @@
+#+title: Gatsby building blocks
+#+roam_key: https://www.gatsbyjs.com/docs/tutorial/part-one/
+#+roam_tags: programming jsx react components html css
+
+Gatsby is built on React. This means, and I'm not really well versed with it
+that we will use components instead of making use of the default browser style
+html tags.
+
+Gatsby uses JSX, which is a format that merges together the use of javaScript,
+html and css in the same file!. When we are trying to reuse information, which
+we could abstract to html tags, we create components:
+
+#+begin_src js
+  const Header => () {
+    const headerText = props.headerText
+    return (
+      <h1>{headerText}</h1>
+    )
+  }
+
+export default Header
+#+end_src
+
+Let's imagine we have placed the header.js file under /components/header.js.  On
+our file, let's say index.js we can import the Header component using relative
+imports.
+
+#+begin_src js
+  import Header from "../component/header.js"
+  //...
+  export default function About() {
+    return (
+       <div style={{ color: `teal` }}>
+      <Header headerText="About Gatsby" />
+      <p>Such wow. Very React.</p>
+    </div>
+  )
+}
+#+end_src
+
+This headerText is passed as arguments inside the props dictionary, which
+contains the argument (in this case attribute) passed as headerText, which we
+access using props.headerText.
+
