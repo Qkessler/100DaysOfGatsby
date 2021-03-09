@@ -86,11 +86,6 @@ const links = [
   },
 ]
 
-function linkLocation(locationName) {
-    const lowerLocationName = locationName.toLowerCase()
-    return "/location/" + lowerLocationName
-}
-
 // markup
 const LocationPage = () => {
   return (
@@ -112,7 +107,7 @@ const LocationPage = () => {
         {links.map(link => (
           <li style={{ ...listItemStyles, color: link.color }}>
             <span>
-                <Link to="/location/cartagena" style={linkStyle}>{link.locationName}</Link>
+                <Link to="/cartagena" style={linkStyle}>{link.locationName}</Link>
               {link.badge && (
                 <span style={badgeStyle} aria-label="New Badge">
                   NEW!

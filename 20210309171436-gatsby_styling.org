@@ -1,0 +1,38 @@
+#+title: Gatsby styling
+#+roam_key: https://www.gatsbyjs.com/docs/how-to/styling
+#+roam_tags: programming css import function code specificity javascript js
+
+Gatsby follows the React way when styling. This means that we
+can use css-js or link different style sheets to the same React component
+file. To apply the later, let's assume we have a css file called
+stylesheet.css. The following snippet of code would import it, just as
+you would with [[file:20210308183755-gatsby_building_blocks.org][gatsby components]].
+#+begin_src js
+  import "./stylesheet.css"
+#+end_src
+
+There is a cool feature called [[https://github.com/css-modules/css-modules][CSS modules]], which are normal css files,
+composed with the following format: file_name.module.css. This files are amazing,
+as they are capable of rewriting ids and classes that might clash with other
+defined components in your other files. When we want access to those specific
+classes, we do the following:
+#+begin_src js
+  import * as containerStyles from "./container.module.css"
+  ...
+  <section className={`container ${containerStyles.container}`}>
+#+end_src
+
+That code applied the global container class and the local container class defined
+in our css module, amazing! :smile:
+
+If you were interested in using global style sheets, you could think about
+creating a file under your preferred folder and importing it in they
+gatsby-browser.js file. The biggest problem with global CSS files is the risk of
+name conflicts and side effects like unintended inheritance. Try using
+the CSS-in-JS approach when possible.
+
+When using CSS-in-JS we need to have in mind that we will be able to create
+js objects containing css code, which is normal in React. This css could
+be applied using the [[file:20210223113520-css33.org][style attribute]]. We could also apply css classes
+using the "className" prop, which would translate to the browser's class
+attribute. We need this because in JS, class is a reserved word.
