@@ -8,8 +8,8 @@ import ArticlePreview from '../components/article-preview'
 
 class BlogIndex extends React.Component {
   render() {
-    const siteTitle = get(this, 'props.data.site.siteMetadata.title')
-    const posts = get(this, 'props.data.allContentfulBlogPost.edges')
+      const siteTitle = get(this, 'props.data.site.siteMetadata.title');
+      const posts = get(this, 'props.data.allContentfulBlogPost.edges');
 
     return (
       <Layout location={this.props.location}>
@@ -34,7 +34,7 @@ class BlogIndex extends React.Component {
   }
 }
 
-export default BlogIndex
+export default BlogIndex;
 
 export const pageQuery = graphql`
   query BlogIndexQuery {
