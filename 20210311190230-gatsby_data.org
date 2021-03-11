@@ -1,0 +1,48 @@
+#+title: Gatsby Data
+#+roam_key: https://www.gatsbyjs.com/docs/tutorial/part-four/
+#+roam_tags: programming graphql query nodes 
+
+Gatsby's data layer is powered by GraphQL, which is a query language
+created by Facebook in 2012, making it public in 2015. You will
+be able to describe the data that you are querying to a [[file:20210308183755-gatsby_building_blocks.org][component]]
+in order to use the dynamic data in your site.
+
+We are able to query for in-app or out of the app content, through
+queries. This queries are defined --or could be using GraphiQL--
+with hand, so you need to make sure that you check the [[https://www.howtographql.com/][sintax]].
+
+The in-app data is queried with the same type of queries. You are
+able to query for data that is defined in the gatsby-config.js file.
+#+begin_src js
+export const query = graphql`
+  query {
+    site {
+      siteMetadata {
+        title
+      }
+    }
+  }
+`
+#+end_src
+
+Through the query above, we are accessing the gatsby-config.js file, searching
+for the title attribute. The data is available through the [[file:20210308183755-gatsby_building_blocks.org][data prop]], which we
+access with {data}.
+
+We don't really need to force ourselves to create a page when wanting to access
+data through GraphQL. Introducing the concept after Gatsby v2, the
+useStaticQuery function is here to save the day!
+#+begin_src js
+const data = useStaticQuery(
+    graphql`
+      query {
+        site {
+          siteMetadata {
+            title
+          }
+        }
+      }
+    `
+  )
+#+end_src
+
