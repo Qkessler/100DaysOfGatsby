@@ -7,22 +7,22 @@ const headingStyles = {
   maxWidth: 320,
 }
 
-const linkStyle = {
-    color: "#1234",
-}
-
 export default function LocationsPage({data}) {
     return (
-        <div style={headingStyles}>
-            <h1>Locations <span role="img" aria-label="Location at dusk emoji">🌆</span></h1>
-        </div>
+        <div>
+            <div style={headingStyles}>
+                <h1>Locations <span role="img" aria-label="Location at dusk emoji">🌆</span></h1>
+            </div>
+          <div>
             <ul>
-                {data.allContentfulLocation.edges.map(({ node }) => (
-                    <li>
-                        <a href="" style={linkStyle}>{node.name}</a>
-                    </li>
-                ))}
+              {data.allContentfulLocation.edges.map(node => (
+                  <li>
+                  {node.name}
+                  </li>
+              ))}
             </ul>
+          </div>
+        </div>
     )
 }
 
@@ -37,5 +37,4 @@ query {
     }
   }
 }
-
 `
