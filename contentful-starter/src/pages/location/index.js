@@ -1,5 +1,5 @@
 import React from "react"
-import { graphql } from "gatsby"
+import { graphql} from "gatsby"
 
 const headingStyles = {
   marginTop: 0,
@@ -15,13 +15,12 @@ export default function LocationsPage({data}) {
             </div>
           <div>
             <ul>
-              {data.allContentfulLocation.edges.map(node => (
-                  <li>
-                  {node.name}
-                  </li>
+              {data.allContentfulLocation.edges.map((node, index) => (
+                <li key={index}>
+                    {node.node.name}
+                </li>
               ))}
-            </ul>
-          </div>
+            </ul>          </div>
         </div>
     )
 }

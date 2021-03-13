@@ -1,29 +1,26 @@
 import React from "react"
-import { StaticQuery, graphql } from "gatsby"
+import { graphql, useStaticQuery } from "gatsby"
 
-export default function Location({locationName}) { return (
-    <StaticQuery
-        query={graphql`query {
-  contentfulLocation(name: {eq: "$locationName"}, location: {lat: {}, lon: {}}, createdAt: {}) {
-    id
-    name
-    description {
-      content {
+export default function Location({locationName}) {
+  const locationData = useStaticQuery(graphql`query {
+    contentfulLocation(name: {eq: "Cartagena"}) {
+      id
+      name
+      description {
         content {
-          value
+          content {
+            value
+          }
         }
       }
     }
   }
-}
-`}
-        render={data => (
-            <div>
-                <h1>{data.name}</h1>
-                
-            </div>
-        )}/>
-    
+  `).contentfulLocation
+  console.log(locationData.name)
+  return (
+    <div>
+        <h1>{locationData.name}</h1>
+        
+    </div>
 )}
-    
 

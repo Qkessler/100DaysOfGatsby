@@ -1,0 +1,33 @@
+#+title: Gatsby Static Queries
+#+roam_key: https://www.gatsbyjs.com/docs/how-to/querying-data/static-query/
+#+roam_tags: programming dynamic curly braces html js react useStaticQuery variable graphql
+
+These are some of the notes that I realized today when learning a bit more about
+routing and queries in general. A very cool feature about react, and more concise,
+gatsby react components, is that we get to use "useStaticQuery", which takes the
+query as argument.
+#+begin_src js
+  const locationData = useStaticQuery(graphql`query {
+    contentfulLocation(name: {eq: "Cartagena"}, location: {lat: {}, lon: {}}, createdAt: {}) {
+      id
+      name
+      description {
+        content {
+          content {
+            value
+          }
+        }
+      }
+    }
+  }
+    `)
+ console.log(locationData)
+#+end_src
+
+This would allow us to pass the queried data to a constant, in order to use it below,
+a react html block for example.
+
+One of the biggest differences between page queries and staticQueries, hence the name,
+is that we cannot pass variables or arguments to the latter, as they are meant to be
+reusable components, not dependent on the passed arguments. Nevertheless, it is amazing
+to see the staticQuery functionality implemented, makes the code a ton more readable.
