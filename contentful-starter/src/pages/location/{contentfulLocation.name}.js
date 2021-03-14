@@ -1,20 +1,19 @@
 import React from "react"
 import { graphql } from "gatsby"
 
-export default (props) => {
-  const data = props.data
-  const location = data.contenfulLocation
+export default ({data}) => {
+  console.log("This is the data \n" + data);
   return (
-  <div>
-      <h1>{props.params.name}</h1>
-      <p>{location.description.content.content.value}</p>
-</div>
-  
+      <div>
+      <h1>{data.contentfulLocation.name}</h1>
+      <p>{data.contentfulLocation.description.content.content.value}</p>
+      </div>
 )}
 
 export const query = graphql`
-  query ($id: String) {
+  query ($id: String!) {
     contentfulLocation(id: { eq: $id }) {
+      name
       description {
         content {
           content {
