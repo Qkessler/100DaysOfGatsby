@@ -1,0 +1,45 @@
+#+title: Gatsby File System API
+#+roam_tags: programming router file system api fields content query graphql
+* Links
+  - https://dev.to/stu/gatsby-s-awesome-new-file-system-route-api-50k9
+  - https://dev.to/obinnaspeaks/this-filesystem-api-made-my-life-easier-3357
+  - https://github.com/gatsbyjs/gatsby/discussions/26375
+  - https://meaganwaller.com/render-dynamic-pages-gatsby-file-system-route-api-yaml
+* Note
+Gatsby is an interesting framework that has been doing things differently for a long
+time now, drawing from a community of [[file:20210309171436-gatsby_styling.org][functionality]] hungry developers, eager to
+help and provide ideas pushing the project further.
+
+Gatsby provides a set of ways to route your pages. Before version 2.26.0, we had to
+move through the creation of pages inside the gatsby-node.js, using the createPage
+function. Don't get me wrong, this has been amazing, as you are able to pass context
+to the pages that you are creating --we won't be able to do so using the File System
+API.
+
+Going back to the specification of the API, we need to keep in mind the way that
+Gatsby will be creating the pages. Let's imagine we are working with Locations
+--meaning one of our content nodes could be named "Location". Through the [[file:20210308181323-gatsby_static_queries.org][graphql]]
+API, we have queries like "allLocation". These type of queries are the kind that
+Gatsby will be using when creating the data models for the File System API.
+
+#+begin_src 
+query AllLocationQuery {
+  allContentfulLocation {
+    edges {
+      node {
+        name
+        location {
+          lat
+          lon
+        }
+      }
+    }
+  }
+}
+#+end_src
+
+This query will get all of our Location objects and give us some of the information.
+Keep in mind that Gatsby always queries by "id". Our [[file:20210308181323-gatsby_static_queries.org][Page query]] should hold an
+id parameter of type "String!". This would allow the Gatsby File System API pass the
+id as prop, while giving you the slug that you have introduced inside curly braces.
+
