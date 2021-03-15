@@ -36,24 +36,24 @@ if (!spaceId || !accessToken) {
 
 module.exports = {
   siteMetadata: {
-      title: "Gatsby Contentful starter",
+    title: "Gatsby Contentful starter",
   },
-    pathPrefix: "/gatsby-contentful-starter",
-    plugins: [
-        "gatsby-transformer-remark",
-        "gatsby-transformer-sharp",
-        "gatsby-plugin-react-helmet",
-        "gatsby-plugin-sharp",
-        {
-            resolve: "gatsby-source-contentful",
-            options: contentfulConfig,
-        },
-        {
-            resolve: `gatsby-source-filesystem`,
-            options: {
-                name: `src`,
-                path: `${__dirname}/src/`,
-            },
-        },
+  pathPrefix: "/gatsby-contentful-starter",
+  plugins: [
+    "gatsby-transformer-remark",
+    "gatsby-transformer-sharp",
+    "gatsby-plugin-react-helmet",
+    "gatsby-plugin-sharp",
+    {
+      resolve: "gatsby-source-contentful",
+      options: contentfulConfig,
+    },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `src`,
+        path: `${__dirname}/src/`,
+      },
+    },
   ],
 };

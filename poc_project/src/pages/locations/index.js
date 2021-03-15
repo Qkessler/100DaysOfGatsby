@@ -1,5 +1,5 @@
 import * as React from "react"
-import { Link } from "gatsby"
+import { Link, graphql } from "gatsby"
 
 // styles
 const pageStyles = {
@@ -61,33 +61,7 @@ const badgeStyle = {
   lineHeight: 1,
 }
 
-// data
-const links = [
-  {
-    locationName: "Cartagena",
-    description:
-      "This is the place I grew up.",
-    color: "#E95800",
-    badge: true,
-  },
-  {
-    locationName: "Murcia",
-    description:
-      "This is the place where I studied university.",
-    color: "#1099A8",
-    badge: true,
-  },
-  {
-    locationName: "Caravaca",
-    description:
-      "This is the place where my spanish grandma lives.",
-    color: "#BC027F",
-    badge: true,
-  },
-]
-
-// markup
-const LocationPage = () => {
+const LocationPage = ({ data }) => {
   return (
     <main style={pageStyles}>
       <title>Locations page</title>
@@ -104,10 +78,24 @@ const LocationPage = () => {
         we currently work at.
       </p>
       <ul style={listStyles}>
-        <li></li>
+        {data.allContentfulLocation.nodes.map((node) => (
+          <li><Link to={node.gatsbyPath}>{node.name}</Link></li>
+        ))}
       </ul>
     </main>
   )
 }
 
 export default LocationPage
+
+export const query = graphql`
+query {
+  allContentfulLocation {
+    nodes {
+      name
+      gatsbyPath(filePath: "/locations/{contentfulLocation.name}")
+    }
+  }
+}
+
+`
