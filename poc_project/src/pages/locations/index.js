@@ -1,5 +1,6 @@
 import * as React from "react"
 import { Link, graphql } from "gatsby"
+import wrapRootElement from "../../components/root-wrapper.js" 
 
 // styles
 const pageStyles = {
@@ -63,6 +64,7 @@ const badgeStyle = {
 
 const LocationPage = ({ data }) => {
   return (
+    <wrapRootElement>
     <main style={pageStyles}>
       <title>Locations page</title>
       <h1 style={headingStyles}>
@@ -83,6 +85,7 @@ const LocationPage = ({ data }) => {
         ))}
       </ul>
     </main>
+      </wrapRootElement>
   )
 }
 

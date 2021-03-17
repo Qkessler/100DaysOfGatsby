@@ -14,6 +14,7 @@ module.exports = {
     "gatsby-plugin-react-helmet",
     "gatsby-plugin-sitemap",
     "gatsby-plugin-sharp",
+    "@chakra-ui/gatsby-plugin",
     "gatsby-transformer-sharp",
     {
       resolve: "gatsby-source-filesystem",
