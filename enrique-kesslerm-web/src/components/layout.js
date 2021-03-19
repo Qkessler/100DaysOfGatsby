@@ -1,12 +1,12 @@
 import React from 'react'
 import { Link } from 'gatsby'
 
+import {NavBar} from './navbar'
+
 export default ({ children }) => {
   return (
     <div>
-      <Link to='/'>
-        <pre>My org-mode Website</pre>
-      </Link>
+      <NavBar/>
       <div style={{ display: 'flex' }}>
         <Link to='/cv'>
           <button>
