@@ -1,0 +1,27 @@
+#+title: Style Guide, Design Systems and Component Libraries
+#+roam_key: https://leerob.io/blog/style-guides-component-libraries-design-systems
+#+roam_tags: programming design working web static chakra gatsby
+
+#+begin_quote
+Unless you think about your design and development process
+upfront, you will run into issues later as you scale.
+#+end_quote
+
+A Style guide is the foundation for designing anything, including
+production websites. These guides are the guidelines for developing
+with a consistent style, even if done by multiple teams, at the same
+time.
+
+For that same production website, a good idea is to set up component
+libraries, which are repositories where most of the components used
+in the website are living. These repositories contain bullet-proof
+components, as they are accessible by all the teams and have been
+bug-fixed multiple times. These also do reflect the style guide for
+the company.
+
+The marriage between the two is the Design System. Solid documentation,
+a complete set of standards and principles along with the components
+from the component library.
+
+We can optimize SVGs --the format that our images should be-- with [[https://github.com/svg/svgo/][SVGO]]
+We can create React components using [[https://github.com/smooth-code/svgr][SVGR]]. 
