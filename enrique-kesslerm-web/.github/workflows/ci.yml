@@ -1,9 +1,6 @@
 name: CI
 
-on:
-  push:
-    branches:
-      - master
+on: [push]
 
 jobs:
   build:
@@ -16,10 +13,10 @@ jobs:
       uses: actions/setup-node@v1
       with:
         node-version: 12.x
-    - name: Build the Website
+    - name: build the website
       run: |
-        npm ci
-        npm run build -- --prefix-paths
+        yarn
+        yarn run build -- --prefix-paths
       env:
         CI: true
     - name: Deploy to GitHub Pages

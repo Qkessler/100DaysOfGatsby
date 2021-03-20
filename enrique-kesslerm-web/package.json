@@ -1,27 +1,23 @@
 {
-  "name": "enrique-kesslerm-web",
+  "name": "gatsby-starter-blorg",
   "private": true,
-  "description": "Web/Blog creation using orga-gs, chakra-ui and Gatsby!",
+  "description": "A simple starter to get up and developing quickly with Gatsby and org-mode",
   "version": "1.0.0",
-  "author": "Enrique Kessler Martínez <enrique.kesslerm@gmail.com>",
+  "author": "Xiaoxing Hu <xiaoxing@huxx.org>",
   "dependencies": {
-    "@chakra-ui/gatsby-plugin": "^1.0.1",
-    "@chakra-ui/react": "^1.3.4",
-    "@emotion/react": "^11.1.5",
-    "@emotion/styled": "^11.1.5",
-    "framer-motion": "^3.10.6",
-    "gatsby": "^2.32.11",
-    "gatsby-theme-orga": "^1.8.16",
-    "react": "^16.14.0",
-    "react-dom": "^16.14.0",
-    "react-icons": "^4.2.0"
+    "gatsby": "^2.27.2",
+    "gatsby-theme-blorg": "^2.3.13",
+    "prop-types": "^15.7.2",
+    "react": "^17.0.1",
+    "react-dom": "^17.0.1",
+    "react-helmet": "^6.1.0"
   },
   "devDependencies": {
-    "npm-check": "^5.9.2",
-    "prettier": "^1.19.1"
+    "prettier": "^2.2.0"
   },
   "keywords": [
     "gatsby",
+    "blog",
     "org-mode",
     "orga"
   ],
@@ -33,16 +29,13 @@
     "format": "prettier --write \"**/*.{js,jsx,json,md}\"",
     "start": "npm run develop",
     "serve": "gatsby serve",
-    "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing \"",
-    "check": "npm-check -u"
+    "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing \""
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/orgapp/gatsby-starter-orga.git"
+    "url": "https://github.com/orgapp/gatsby-starter-blorg"
   },
   "bugs": {
-    "url": "https://github.com/orgapp/gatsby-starter-orga/issues"
-  },
-  "homepage": "https://github.com/orgapp/gatsby-starter-orga#readme",
-  "main": "gatsby-browser.js"
+    "url": "https://github.com/orgapp/gatsby-starter-blorg/issues"
+  }
 }

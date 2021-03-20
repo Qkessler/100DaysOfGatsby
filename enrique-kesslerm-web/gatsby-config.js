@@ -1,26 +1,31 @@
 module.exports = {
-  pathPrefix: `gatsby-starter-orga`,
+  pathPrefix: `/gatsby-starter-blorg`,
   siteMetadata: {
-    title: `Gatsby With Orga`,
-    description: `This barebones starter ships with org-mode support.`,
-    author: `Xiaoxing Hu <xiaoxing@huxx.org>`,
+    siteURL: 'https://orga.js.org', // replace this with your own domain
+    title: `Gatsby With Orga`, // replace it with your own title
+    description: `Kick off your next, great Gatsby project with this default starter. This barebones starter ships with the main Gatsby configuration files you might need.`,
+    author: 'Xiaoxing Hu', // this one is take, choose another name
+    twitter: 'xiaoxinghu', // replace it, or set to 'false' to disable "Tweet this" button
+    social: [ // again, replace thse with your own value, or set to empty array to disable them
+      { name: 'twitter', url: 'https://twitter.com/xiaoxinghu' },
+      { name: 'website', url: 'https://www.huxiaoxing.com' },
+      { name: 'github', url: 'https://github.com/xiaoxinghu' },
+    ]
   },
   plugins: [
     {
-      resolve: `gatsby-theme-orga`,
+      resolve: `gatsby-theme-blorg`,
       options: {
-        // basePath: `/blog`, // if you want your content to be on a prefix, default is `/`
-        // contentPath: `blog`, // source of your org files, default to `content`
-        // filter: { // filter of your posts, key should match metadata propperty names, default is {}
-        //   category: `posts`,
-        // },
-        pagination: 5, // default to 10
-        // slug: ['blog', '$export_file_name'], // how to generate slug for posts, default ['$category', '$export_file_name']
-        // buildIndexPage: true, // default true
-        // buildCategoryIndexPage: true, // default true
-        metadata: ['title', 'category', 'date', 'tags'], // pick the metadata you need in your custom `post` and `posts` components
-        sortBy: [`date`], // sort posts
-        order: `DESC`, // order for sorting
+        // contentPath: 'content',
+        // filter: () => true,
+        // pagination: 5,
+        // columns: 2,
+        // indexPath: '/',
+        // imageMaxWidth: 1380,
+        // categoryIndexPath: category => `/${category}`,
+        // tagIndexPath: tag => `/:${tag}:`,
+        // slug: ({ export_file_name }) => `/${export_file_name}`,
+        // postRedirect: () => [],
       },
     },
   ],
