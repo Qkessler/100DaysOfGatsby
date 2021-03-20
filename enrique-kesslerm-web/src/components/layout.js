@@ -1,19 +1,19 @@
 import React from 'react'
-import { Link } from 'gatsby'
+// import { Link } from 'gatsby'
 
-import {NavBar} from './navbar'
+// import NavBar from './navbar'
+import {GrMenu, GrClose} from 'react-icons/gr'
+import {Box} from '@chakra-ui/react'
 
 export default ({ children }) => {
   return (
     <div>
-      <NavBar/>
-      <div style={{ display: 'flex' }}>
-        <Link to='/cv'>
-          <button>
-            View My CV
-          </button>
-        </Link>
-      </div>
+      <Box w="100%">
+        {GrMenu}
+      </Box>
+      <Box w="100%">
+        {GrClose}
+      </Box>
       <main>
         { children }
       </main>
