@@ -4,7 +4,6 @@ import { jsx, Text, Box } from 'theme-ui'
 import ThemeSwitch from './theme-switch'
 
 export default ({ title }) => {
-
   return (
     <header sx={{
       '@media print': { display: 'none' },
