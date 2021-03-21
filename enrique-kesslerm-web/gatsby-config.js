@@ -20,7 +20,7 @@ module.exports = {
         // filter: () => true,
         // pagination: 5,
         columns: 1,
-        // indexPath: '/',
+        // indexPath: '/blog',
         // imageMaxWidth: 1380,
         // categoryIndexPath: category => `/${category}`,
         // tagIndexPath: tag => `/:${tag}:`,
