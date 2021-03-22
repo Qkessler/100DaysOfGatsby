@@ -111,11 +111,3 @@ your own UI from scratch.
 Of cause, if you have to create websites over and over again, you can create a
 theme like gatsby-theme-blorg, and reuse it everywhere. Don't forget to let me
 know when you do. 😉
-
-* PUBLISHED testing the file creation
-:PROPERTIES:
-:SUMMARY: Testing the file creation by posts.
-:CATEGORY: testing
-:END:
-
-This is the post thta I have created tsting the orgajs api.
