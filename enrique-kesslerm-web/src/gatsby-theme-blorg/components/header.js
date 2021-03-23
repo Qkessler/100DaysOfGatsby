@@ -18,7 +18,7 @@ export default ({ title }) => {
       </Box>
       <Box sx={{ display: 'flex', placeItems: 'center'}}>
         <Link to='/blog'>
-          <Text sx={{
+      <Text sx={{
             p: 3,
           }}>Blog</Text>
         </Link>
