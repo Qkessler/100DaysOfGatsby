@@ -4,12 +4,14 @@
 #+STARTUP: logdone
 
 * PUBLISHED Customize the Theme                                    :tutorial:
-CLOSED: [2020-11-10 Tue 15:45]
+  CLOSED: [2021-03-23 mar 15:32]
 :PROPERTIES:
 :SUMMARY:  How to change the colors and stuff.
 :END:
 
-Color theme is powered by [[https://theme-ui.com][theme-ui]], the same way [[https://github.com/gatsbyjs/themes/tree/master/packages/gatsby-theme-blog][the official markdown based blog theme]] is. There are 2 ways to customize the theme.
+Color theme is powered by [[https://theme-ui.com][theme-ui]], the same
+way [[https://github.com/gatsbyjs/themes/tree/master/packages/gatsby-theme-blog][the official markdown based blog theme]] is.  There are 2 ways to customize
+the theme.
 
 ** Use a Different [[https://theme-ui.com/packages/presets][Preset]]
 The default preset is [[https://github.com/orgapp/orgajs/tree/master/packages/orga-theme-ui-preset][orga-theme-ui-preset]]. To use a different one, simply install the package.
@@ -34,7 +36,10 @@ module.exports = {
 #+END_SRC
 
 ** Tweak a Preset
-You can shadow the gatsby-plugin-theme-ui plugin to tweak on existing preset. Basically you can create a file within this project: =src/gatsby-plugin-theme-ui/index.js=, and go nuts in there. An example would look like this:
+You can shadow the gatsby-plugin-theme-ui plugin to tweak on existing
+preset. Basically you can create a file within this project:
+=src/gatsby-plugin-theme-ui/index.js=, and go nuts in there. An example would
+look like this:
 #+BEGIN_SRC javascript
 // src/gatsby-plugin-theme-ui/index.js
 export default {

@@ -1,0 +1,29 @@
+#+LINK: https://www.gatsbyjs.com/resources/webinars/
+
+* Old vs new ways to improve performance
+Instead of trying to improve bandwidth and speed, get closer and cache
+everything that you can.
+
+The get closer steps through edge servers, in order to get the content
+cached to the user better and faster.
+
+** How does Gatsby fit in this
+Everything has already been compiled, instead of offering the communications
+with all the hardware and software that needs to be called.
+
+Instead of having dynamic files, static files are easier to cache and less
+of a burder to new users.
+
+* Gatsby Cloud
+  The best way to run Gatsby on, using the edge network discussed above, is
+  Gatsby Cloud. Besides being build on a good and fast, never better said, cdn
+  (Fastly, which is used by Stripe and Github), it is optimized for using Gatsby
+  by the Gatsby team.
+** Previews
+   You have the ability to preview the information that you are about to push to
+   the production website.
+
+** Demo
+   Super easy to deploy, just by having the folder on github you are basically
+   done. You can add env variable, being prepopulated with your gatsby-config.js
+   file or others.
