@@ -134,7 +134,7 @@ Generate slug for posts, with post metadata as input.
 *** =preset=
 [[https://theme-ui.com][theme-ui]] preset.
 
-* DONE About Your Org Files
+* PUBLISHED About Your Org Files                  :tutorial:
 CLOSED: [2020-11-10 Tue 15:50]
 :PROPERTIES:
 :ID:       3c77e9cf-c23f-4a22-886c-c3b345d0b7d5
