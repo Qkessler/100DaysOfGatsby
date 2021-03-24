@@ -149,3 +149,19 @@
    The 16th day was amazing. I got to attend to a Gatsby cloud performance
    webinar, and added a note on the notes that I had been taking on the
    webinar: [[https://github.com/Qkessler/100DaysOfGatsby/blob/main/enrique-kesslerm-web/performance_webinar_notes.org][performance webinar notes.]]
+
+** Day 17: 2021/03/24
+   I moved the enriquekesslerm.com repo from the 100DaysOfGatsby to its own repo,
+   with the intention of using the repository to create my future web page, which
+   will contain information about me and some of my writing, getting excited! :smile:
+
+   I had a ton of problems with the moving process, it seems that I need to adapt
+   to having starter pages using a lower version of dependencies with:
+
+   #+begin_src bash	
+    npm install --force-dependencies
+   #+end_src
+   
+   After succesfully moving the project, before running out of time, I started dabbling
+   into the creation of my =/about= page. I need to create a content plan before jumping
+   to code.
