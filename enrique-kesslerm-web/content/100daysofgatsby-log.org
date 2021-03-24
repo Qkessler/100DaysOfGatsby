@@ -150,3 +150,4 @@ created by the Gatsby team, you can find it here: [[https://www.gatsbyjs.com/blo
    The 16th day was amazing. I got to attend to a Gatsby cloud performance
    webinar, and added a note on the notes that I had been taking on the
    webinar: [[https://github.com/Qkessler/100DaysOfGatsby/blob/main/enrique-kesslerm-web/performance_webinar_notes.org][performance webinar notes.]]
+
