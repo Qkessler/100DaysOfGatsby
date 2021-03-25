@@ -1,0 +1,24 @@
+#+title: About pages
+#+roam_key: https://yourchicgeek.com/about-pages-for-blogs-and-websites/
+#+roam_tags: design writing blog website world mission people attract
+
+Your about page contrary to common knowledge, myself included, is not only about
+you, your life, or your projects. It is about the people you want to attract and
+serve.
+
+Some of the essential information that you should keep in your about page.
+- A statement that explains your visitors what's in it for them?
+- Your bio and background story.
+- A picture of yourself.
+- A call to action.
+
+You will write in the first person, in most cases. Keep it simple, concise and
+with enough information about you and your site. Keep in mind that the future
+readers don't necessarily want to know about you (a.k.a calling the blog page
+about-me), they want to know whether your content is worth it.
+
+Be honest, use your voice. CTA. Proofread three times the about page, it should
+be free of typographical errors and well written.
+
+Review the about page once a year, keep the links and your life situation updated.
+Connect to your [[https://javascript.plainenglish.io/how-to-create-a-newsletter-with-mailchimp-gatsby-js-netlify-d48778d5c774][newsletter]]

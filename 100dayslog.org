@@ -165,3 +165,14 @@
    After succesfully moving the project, before running out of time, I started dabbling
    into the creation of my =/about= page. I need to create a content plan before jumping
    to code.
+
+
+** Day 18: 2021/03/25
+   I continued working on the /about page. In order to follow good about page design
+   guidelines, I created the [[file:20210325120813-about_pages.org::+title: About pages][about pages note]]. I started dabbling on the use of
+   Images in gatsby, which is a spiky topic. Gatsby knows that most of the performance
+   issues in modern web apps come from images, and has created a image plugin to
+   take care of that, really cool.
+
+   I created a project-show component in order to showcase some of the projects on
+   the about page, half acting as a cv.
