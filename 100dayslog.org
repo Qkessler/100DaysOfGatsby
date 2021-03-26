@@ -27,7 +27,7 @@
   a [[https://github.com/Qkessler/100DaysOfGatsby/blob/main/20210309171436-gatsby_styling.org][note]] on the topic, drawing from the information that I found on
   the [[https://www.gatsbyjs.com/docs/how-to/styling][how-to/styling]] page in the Gatsby documentation.
 
-  I also tried implementing a simple navigation betweeen locations with the file
+  I also tried implementing a simple navigation between locations with the file
   system api, but I didn't seem to understand it correctly. More work to do.
 
 ** Day 4: 2021/03/10
@@ -118,9 +118,9 @@
    always feels good.
 
 ** Day 14: 2021/03/21
-   On day 14, I tried to swich from npm to yarn, as I found that yarn was much
+   On day 14, I tried to switch from npm to yarn, as I found that yarn was much
    quicker and lighter, considering that I have to create a node_modules folder
-   everytime I change machines. Didn't really work, I was running into
+   every time I change machines. Didn't really work, I was running into
    dependency issues and couldn't find helpful information on the documentation.
 
    I restarted the project once more, considering that I had messed up the
@@ -162,7 +162,7 @@
     npm install --force-dependencies
    #+end_src
    
-   After succesfully moving the project, before running out of time, I started dabbling
+   After successfully moving the project, before running out of time, I started dabbling
    into the creation of my =/about= page. I need to create a content plan before jumping
    to code.
 
@@ -176,3 +176,21 @@
 
    I created a project-show component in order to showcase some of the projects on
    the about page, half acting as a cv.
+
+** Day 19: 2021/03/26
+   As I keep on moving with the /about page, I decided on the initial design that I
+   linked on previous days. You can find it [[file:about-page-poc.jpg][here.]] I started working on the gradient
+   part of the text. Sparked by the initial idea, I found two interesting links:
+
+   - https://www.joshwcomeau.com/react/rainbow-button/: rainbow gradient
+     transition inspiration, the idea drawing on react hooks and css variables
+     is great. I adapted his work to act as a moving background for my text.
+   - https://github.com/system-ui/theme-ui/discussions/1011: some information
+     about how to style theme-ui components using css tags.
+
+   With working information, I adapted Josh's work to get a working animated
+   gradient text component, which I used to style my name on the /about page.
+
+   #+CAPTION: Moving gradient name!
+   #+NAME:   gradient-name
+   [[./gradient-name.gif]]
