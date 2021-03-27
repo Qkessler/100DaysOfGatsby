@@ -1,3 +1,4 @@
+#+STARTUP: overview
 * 100DaysOfGatsby log
   Starting the journey! Considering previous experience learning Python
   following a similar strategy, I find that the 100DaysOf* is the best way to
@@ -166,7 +167,6 @@
    into the creation of my =/about= page. I need to create a content plan before jumping
    to code.
 
-
 ** Day 18: 2021/03/25
    I continued working on the /about page. In order to follow good about page design
    guidelines, I created the [[file:20210325120813-about_pages.org::+title: About pages][about pages note]]. I started dabbling on the use of
@@ -194,3 +194,17 @@
    #+CAPTION: Moving gradient name!
    #+NAME:   gradient-name
    [[./gradient-name.gif]]
+
+** Day 20: 2021/03/27
+   Already on the 20th day! I'm loving the journey and it feels like I'm getting
+   more comfortable working with npm, typeScript and Gatsby overall. The project
+   tree no longer feels scary.
+
+   I continued working on the /about page, starting to create the components
+   filling some of the sections. I did some more work on the project-show component,
+   but I ran into some problems trying to use the theme-ui main color theme for
+   "styling" the svg. Some of the links that I found useful:
+
+   - [[https://stackoverflow.com/questions/61158924/import-svg-as-a-component-in-gatsby/61161331][Stack overflow answer]].
+   - [[https://www.gatsbyjs.com/plugins/gatsby-plugin-react-svg/#gatsby-plugin-react-svg-npm-version][gatsby-plugin-react-svg documentation]].
+
