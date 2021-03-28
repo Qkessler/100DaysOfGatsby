@@ -208,3 +208,15 @@
    - [[https://stackoverflow.com/questions/61158924/import-svg-as-a-component-in-gatsby/61161331][Stack overflow answer]].
    - [[https://www.gatsbyjs.com/plugins/gatsby-plugin-react-svg/#gatsby-plugin-react-svg-npm-version][gatsby-plugin-react-svg documentation]].
 
+
+** Day 21: 2021/03/28
+   I continued with the structure of the /about page, with problems. I find that some
+   of the posts that are supposed to be format friendly are faulty, I might need to
+   restart the project again.
+
+   Some of the problems seem to be coming from the fact that most of the dependencies are
+   legacy-deps, which are not secured. I continued with the inclusions of some of the
+   projects that I have been working on and tried the optimization of svgs, without success.
+
+   Styling seems hard with the theme-ui configuration, without having our own. I need to
+   figure out a way to extend the orga-theme-ui-preset with my styles, or use a min.css file.
