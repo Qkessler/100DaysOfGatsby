@@ -208,7 +208,6 @@
    - [[https://stackoverflow.com/questions/61158924/import-svg-as-a-component-in-gatsby/61161331][Stack overflow answer]].
    - [[https://www.gatsbyjs.com/plugins/gatsby-plugin-react-svg/#gatsby-plugin-react-svg-npm-version][gatsby-plugin-react-svg documentation]].
 
-
 ** Day 21: 2021/03/28
    I continued with the structure of the /about page, with problems. I find that some
    of the posts that are supposed to be format friendly are faulty, I might need to
@@ -220,3 +219,31 @@
 
    Styling seems hard with the theme-ui configuration, without having our own. I need to
    figure out a way to extend the orga-theme-ui-preset with my styles, or use a min.css file.
+
+** Day 22: 2021/03/30
+   Today I kept working trying to understand the theming that is done with
+   the default =orga-theme-ui-preset=. I can't seem to understand the shadowing
+   of the theme. From the base *Theme-ui* documentation I see that the following
+   example should work:
+   #+begin_src javascript
+        import orga from 'orga-theme-ui-preset/lib/index'
+
+
+        export default {
+          ...orga,
+          links: {
+            project: {
+              color: 'text',
+              textDecoration: 'none',
+              transition: '0.3s',
+              '&:hover': {
+                color: 'secondary',
+              }
+            }
+          }
+     }
+   #+end_src
+
+   This code under =gatsby-plugin-theme-ui/index.js= should provide the 'project' variant
+   for Links, but the styling doesn't seem to be applied. Need to do some more digging.
+   Today was fun.
