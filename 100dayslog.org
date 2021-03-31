@@ -247,3 +247,13 @@
    This code under =gatsby-plugin-theme-ui/index.js= should provide the 'project' variant
    for Links, but the styling doesn't seem to be applied. Need to do some more digging.
    Today was fun.
+
+** Day 23: 2021/03/31
+   I continued trying to tweak the custom =theme= in the starter, but
+   I still don't seem to understand the way the creator intended for us to tweak
+   his own theme.
+
+   I have tried the definition of variants for some of the components that I wan't
+   to create, without success. I have also tried to extend his theme by using the
+   ...orga in the index file, no luck. I reached to @xiaoxinghu to clear up the fog
+   a bit.
