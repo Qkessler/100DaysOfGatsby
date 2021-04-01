@@ -257,3 +257,14 @@
    to create, without success. I have also tried to extend his theme by using the
    ...orga in the index file, no luck. I reached to @xiaoxinghu to clear up the fog
    a bit.
+
+** Day 24: 2021/04/01
+   I'm ready to give up, it feels like there is no progress... APRIL FOOLS!
+   
+   I have finally got a hang of how theme-ui styles its components. Even though
+   I couldn't use variants as I would have liked, I was able to create components
+   and style them individually, accessing the theme properties with the =sx= prop.
+
+   That said, I finished the projects section in the /about page. I also started
+   working on the timeline component for the /about page and finally got a working
+   style. I love the initial look, I need to fill in the info soon.
