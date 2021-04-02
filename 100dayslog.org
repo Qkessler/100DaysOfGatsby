@@ -268,3 +268,12 @@
    That said, I finished the projects section in the /about page. I also started
    working on the timeline component for the /about page and finally got a working
    style. I love the initial look, I need to fill in the info soon.
+
+** Day 25: 2021/04/02
+   I continued working with the about page, getting a working timeline
+   elements, while keeping a consistent styling using theme-ui.
+
+   As I wanted to change the color of the NavLinks to the text color,
+   I used the information that I learned from the fight with the
+   project-show component in the /about page to change the styling
+   using the sx prop, amazing!
