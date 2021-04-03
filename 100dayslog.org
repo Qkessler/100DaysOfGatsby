@@ -277,3 +277,12 @@
    I used the information that I learned from the fight with the
    project-show component in the /about page to change the styling
    using the sx prop, amazing!
+
+** Day 26: 2021/04/03
+   Today I got around making the flex component for the /about page. It really
+   looks like it's starting to shape up to be a cool page. I'm satisfied by the
+   result.
+
+   In order to abstract the code, I also created the =src/constants= folder to
+   hold all the constants of the components. That way, in the =about.js= file I
+   no longer need to hold the strings for the information.
