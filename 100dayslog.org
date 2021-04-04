@@ -293,4 +293,6 @@
    entire process was seemless, I added most of the locations I have traveled to, and
    it is bringing amazing memories!
 
+   #+CAPTION: Travel map
+   #+NAME:   travel-map
    [[file:src/travel-map.png][file:~/Documents/100DaysOfGatsby/src/travel-map.png]]
