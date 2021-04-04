@@ -295,4 +295,4 @@
 
    #+CAPTION: Travel map
    #+NAME:   travel-map
-   [[file:src/travel-map.png][file:~/Documents/100DaysOfGatsby/src/travel-map.png]]
+   [[./src/travel-map.png]]
