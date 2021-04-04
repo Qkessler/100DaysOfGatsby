@@ -286,3 +286,11 @@
    In order to abstract the code, I also created the =src/constants= folder to
    hold all the constants of the components. That way, in the =about.js= file I
    no longer need to hold the strings for the information.
+
+** Day 27: 2021/04/04
+   Today I continued with the /about page, adding the travel map section. The section
+   uses =react-leaflet= which is the open-source map solution package for react. The
+   entire process was seemless, I added most of the locations I have traveled to, and
+   it is bringing amazing memories!
+
+   [[file:src/travel-map.png][file:~/Documents/100DaysOfGatsby/src/travel-map.png]]
