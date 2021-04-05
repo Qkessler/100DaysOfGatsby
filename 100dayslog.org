@@ -296,3 +296,15 @@
    #+CAPTION: Travel map
    #+NAME:   travel-map
    [[./src/travel-map.png]]
+
+** Day 28: 2021/04/05
+   Today I finished some touches on the /about page, created the structure for
+   the /projects page and added some of the information needed there.
+
+   I got the idea of slicing the projects list to add the two latest topic to the
+   about page. In javaScript, we can use the =slice= function, close to slicing
+   iterables in python3.
+   #+begin_src javascript
+    const latestProjects = projects.slice(0, 2)
+   #+end_src
+
