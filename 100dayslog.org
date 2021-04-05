@@ -308,3 +308,18 @@
     const latestProjects = projects.slice(0, 2)
    #+end_src
 
+   With the idea I created a component that would use a prop to check whether I
+   want to show all the topics or the list sliced. Pretty amazing. I also had
+   extra time today and started to work on changing the index page. I modified
+   the layout on the /about page configuring the FlexBox layout by theme-ui.
+   #+begin_src javascript
+   <Box sx={{ display: 'flex', flexWrap: 'wrap' }}>
+            <Text pb={4} pr={4} sx={{ flexGrow: 1, flexBasis: 500 }}>{constants.aboutMeText}</Text>
+            <StaticImage src="../../assets/images/fotoCV.png"
+              alt="Enrique Kessler Martínez"
+              placeholder="blurred"
+              layout="constrained"
+                         sx={{ flexGrow: 1, flexBasis: 0, minWidth: 200, maxWidth: 250, margin: 'auto' }}
+            />
+          </Box> 
+   #+end_src
