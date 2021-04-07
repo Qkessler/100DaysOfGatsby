@@ -333,3 +333,12 @@
    I also added the test of a blog post: Emacs for writing. I have been searching inside
    the Emacs ecosystem for packages that would improve my writing, considering I intend
    to keep on going with blog post writing and more.
+
+** Day 30: 2021/04/07
+   I finally got around understanding how can I override the ='indexPath'= for
+   the orga-blorg. The /blog page is turning great. I started looking at search
+   inside of Gatsby and I found the interesting [[https://www.gatsbyjs.com/plugins/gatsby-plugin-elasticsearch/][gatsby-plugin-elasticsearch]],
+   giving us also react components for accessing the different indexes.
+
+   It is self-hosted, so I need to balance the need to have it out in the world
+   vs self-hosted, which is said to increase lots the bundle size.
