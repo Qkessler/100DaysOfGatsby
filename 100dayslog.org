@@ -323,3 +323,13 @@
             />
           </Box> 
    #+end_src
+
+** Day 29: 2021/04/06
+   Today I didn't have much time to work on a big section of the blog. I changed
+   the orga-blorg Index page to be at /blog, but the result is not what I expected,
+   I will need to check the source code to make sure where the maintainer is using
+   the queries for the index page, I couldn't find it easily.
+
+   I also added the test of a blog post: Emacs for writing. I have been searching inside
+   the Emacs ecosystem for packages that would improve my writing, considering I intend
+   to keep on going with blog post writing and more.
