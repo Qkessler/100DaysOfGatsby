@@ -342,3 +342,19 @@
 
    It is self-hosted, so I need to balance the need to have it out in the world
    vs self-hosted, which is said to increase lots the bundle size.
+
+** Day 31: 2021/04/08
+   Today I finally finished implementing the searchBar for my /blog page. The hole
+   experience was really rewarding, because the documentation is not great, and I
+   had to do a lot of guesswork to get the information about the package right.
+
+   Some of the links that I found specially helpful are the following:
+   - https://www.gatsbyjs.com/plugins/gatsby-plugin-elasticsearch/
+   - https://medium.com/swlh/building-a-search-bar-for-your-gatsbyjs-site-with-typesense-3e277dc33942
+   - https://github.com/typesense/typesense-instantsearch-adapter
+   - http://elasticlunr.com/
+
+   I finally settled on the latter, for its ease of implementation and its already
+   good examples that can be tweaked.
+
+   [[./src/search-engine.gif]]
