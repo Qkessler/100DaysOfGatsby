@@ -344,11 +344,11 @@
    vs self-hosted, which is said to increase lots the bundle size.
 
 ** Day 31: 2021/04/08
-   Today I finally finished implementing the searchBar for my /blog page. The hole
+   Today I finally finished implementing the searchBar for my /blog page. The whole
    experience was really rewarding, because the documentation is not great, and I
    had to do a lot of guesswork to get the information about the package right.
 
-   Some of the links that I found specially helpful are the following:
+   Some of the links that I found especially helpful are the following:
    - https://www.gatsbyjs.com/plugins/gatsby-plugin-elasticsearch/
    - https://medium.com/swlh/building-a-search-bar-for-your-gatsbyjs-site-with-typesense-3e277dc33942
    - https://github.com/typesense/typesense-instantsearch-adapter
