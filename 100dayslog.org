@@ -358,3 +358,24 @@
    good examples that can be tweaked.
 
    [[./src/search-engine.gif]]
+
+** Day 32: 2021/04/09
+   Today I finished the post-share component, I have the finished links for: Facebook,
+   Twitter, LinkedIn and mailto. I'm happy with the overall result.
+
+   I also added the Edit on Github link, to be able to fork and commit possible typos.
+   
+** Day 33: 2021/04/10
+   I received a mail from the creator of orga.js, which is the engine that I'm using
+   to get the content out of the org-mode content files to fill my posts. He had migrated
+   to Gatsby v3, which was already a peer dependency of all the packages that I was using.
+   
+   The migration was pretty much painless, but I seem to keep getting the error of
+   changing the title on the posts when one is changed.
+
+** Day 34: 2021/04/11
+   Today I didn't really have much time to work with. I continued to change some
+   of the configuration, in order to mitigate the title error, without
+   success. I might need to change the project to use the new starter again.
+
+   I also added some images to the 100Daysofgatsby post.
