@@ -379,3 +379,34 @@
    success. I might need to change the project to use the new starter again.
 
    I also added some images to the 100Daysofgatsby post.
+
+** Day 35: 2021/04/12
+   I finally fixed the title error, which was originally caused because the
+   cache is built on the orgPosts on build, and when I try to change any of them
+   the cache turns obsolete. The solution that I came up with is just to remove
+   the cache as a prebuild and predevelop script. The possible changes that I
+   did on the =package.json= file are the following:
+
+   #+begin_src json
+    "scripts": {
+    "build": "gatsby build",
+    "prebuild": "rm -rf .cache",
+    "predevelop": "rm -rf .cache",
+    "develop": "gatsby develop",
+    "format": "prettier --write \"**/*.{js,jsx,json,md}\"",
+    "start": "npm run develop",
+    "serve": "gatsby serve",
+    "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing \""
+  },
+   #+end_src
+
+   Note that the scripts with pre as a prefix to the intended script name are
+   run before the original script is called. The post prefix does the same for
+   running the scripts after the original script.
+
+   I also changed the Projects component to allow for a timeline component if
+   the =timeline= prop is passed. I find that checking the date on which the
+   project was built is interesting for possible visitors.
+
+   Lastly, I modified the post-share file to remove the "Share with" text, I find
+   that having the icons is already enough at the end of the post.
