@@ -410,3 +410,33 @@
 
    Lastly, I modified the post-share file to remove the "Share with" text, I find
    that having the icons is already enough at the end of the post.
+
+** Day 36: 2021/04/13
+   Today I started working on the / page, adapting the /about page to hold less information,
+   leaving the Latest Posts and Latest projects to the home page.
+
+   I also changed some of the siteMetadata, in order to access the socialLinks in the footer.
+   I can't seem to be able to align the icons in the center of the footer, something weird.
+
+** Day 37: 2021/04/14
+   Heavily inspired by [[https://francoisbest.com][François Best]], I continued working on my index page,
+   which I seem to finally have struck a cord with. I am really proud of its
+   actual state.
+
+   François has this amazing feature for the blog posts that he fathoms as
+   Featured.  He marks them with a little icon (with its position set to
+   absolute), and the final result is clean and suttle.
+
+   [[./src/francoisbest-post.png]]
+
+   I really liked the layout that he had on his Posts, and I changed my tags to
+   be on a flex layout with the date. I also added the little icon on the
+   corner, it is just too slick to pass on. Ended up with this:
+
+   [[./src/my-post.png]]
+
+   I also changed the layout on the inside of the posts, to remove the bio and
+   center and divide the post-share section. It is now cleaner in my opinion,
+   and it is not too charged with information. I changed the footer too :smile:.
+
+   [[./src/footer-post-share.png]]
