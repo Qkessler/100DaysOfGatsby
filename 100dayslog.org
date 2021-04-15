@@ -440,3 +440,14 @@
    and it is not too charged with information. I changed the footer too :smile:.
 
    [[./src/footer-post-share.png]]
+
+** Day 38: 2021/04/15
+   Today I started working on adding Tags to the projects, I feel that the
+   splash of colors is needed for the /projects page, while giving some important
+   information to possible visitors. Pretty happy with the result, here is the light
+   and dark-mode version.
+
+   I also checked the build using =yarn build= without success. The build doesn't work
+   correctly, some of the information is display badly, specially at the footer.
+
+   
