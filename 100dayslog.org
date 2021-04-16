@@ -450,4 +450,68 @@
    I also checked the build using =yarn build= without success. The build doesn't work
    correctly, some of the information is display badly, specially at the footer.
 
+** Day 39: 2021/04/16
+   This morning I finally fixed all errors relating the build. For some reason,
+   adding a li when it wasn't needed gave the error. Even surrounding it with ul
+   didn't improve the situation. If removed all together the error is fixed and
+   the website can fully build and serve.
+
+   Just to test it out, I deployed an initial version (without lots of
+   information) to Gatsby Cloud. The process was painless, setting up the repo
+   and forgetting.
+
+   I also set up an RSS feed for my posts (using [[https://www.gatsbyjs.com/plugins/gatsby-plugin-feed][gatsby-plugin-feed]]),
+   configuring the serialize function to work with OrgPosts, my object
+   type. Pretty cool package, does a lot of work for you.
+
+   #+begin_src javascript
+    { 
+      resolve: `gatsby-plugin-feed`,
+      options: {
+        query: `
+          {
+            site {
+              siteMetadata {
+                title
+                description
+                siteUrl
+                site_url: siteUrl
+              }
+            }
+          }
+        `,
+        feeds: [
+          {
+            serialize: ({ query: { site, allOrgPost } }) => {
+              return allOrgPost.nodes.map(post => {
+                return Object.assign({}, post, {
+                  title: post.title,
+                  date: post.date,
+                  url: site.siteMetadata.siteUrl + post.slug,
+                  guid: site.siteMetadata.siteUrl + post.slug,
+                  custom_elements: [{ "content:encoded": post.html }],
+                })
+              })
+            },
+            query: `
+              {
+                allOrgPost(sort: {fields: date, order: DESC}) {
+                   nodes {
+                      title
+                      excerpt
+                      html
+                      date(formatString: "MMMM DD, YYYY")
+                      slug
+                  }
+               }
+            }
+            `,
+            output: "/rss.xml",
+            title: "Enrique Kessler Martínez's posts",
+          },
+        ],
+      },
+    },
+   #+end_src
+
    
