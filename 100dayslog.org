@@ -48,6 +48,8 @@
   - [[#day-37-20210414][Day 37: 2021/04/14]]
   - [[#day-38-20210415][Day 38: 2021/04/15]]
   - [[#day-39-20210416][Day 39: 2021/04/16]]
+  - [[#day-40-20210417][Day 40: 2021/04/17]]
+  - [[#day-41-20210418][Day 41: 2021/04/18]]
 
 ** Day 1: 2021/03/07
   The first day I created the repository and added the first project, starting
@@ -556,4 +558,25 @@
     },
    #+end_src
 
-   
+** Day 40: 2021/04/17
+   Today was one of those Refactoring days. I find that having some days for
+   refactoring some of the code improves the codebase of a projects lots.
+
+   I removed the projects constants from the /projects page and moved the
+   information to its own =jsx= file in the /constants folder. I also updated
+   the timeline to work differently when used with projects or in the /about
+   page. For the /about page, I added cool checkboxes and a headline on the
+   events.
+
+   I also finished the /404 page, adding some information from wikipedia and
+   guiding users to the / page. I might need to upgrade it some time in the future,
+   it should be at least a bit funny :smile:.
+
+** Day 41: 2021/04/18
+   Following the refactoring on the day before, I continued updating and refactoring
+   the timeline component. Instead of using conditional rendering when an if-else
+   situation pops in, just return on if and on else.
+
+   I also added my first Book review blog post: Range by David Epstein. I might
+   need to hide most of the mosts when starting with the page, and uploading
+   them sequentially.
