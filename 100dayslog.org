@@ -50,6 +50,7 @@
   - [[#day-39-20210416][Day 39: 2021/04/16]]
   - [[#day-40-20210417][Day 40: 2021/04/17]]
   - [[#day-41-20210418][Day 41: 2021/04/18]]
+  - [[#day-42-20210420][Day 42: 2021/04/20]]
 
 ** Day 1: 2021/03/07
   The first day I created the repository and added the first project, starting
@@ -580,3 +581,51 @@
    I also added my first Book review blog post: Range by David Epstein. I might
    need to hide most of the mosts when starting with the page, and uploading
    them sequentially.
+
+** Day 42: 2021/04/20
+   In order to provide an Archive page holding the list of posts per year, I created
+   the Archive component, which uses an interesting query:
+   
+   #+begin_src javascript
+       export const query = graphql`
+query ArchiveQuery {
+  allOrgPost(sort: {fields: date, order: DESC}) {
+    nodes {
+      title
+      date(formatString: "YYYY")
+      slug
+    }
+  }
+}
+`   
+   #+end_src
+
+   In this query, I get the years in the date field for each post, ordering
+   them in descending order. In the =getPostsByYear= function I then process
+   the different years and posts creating a new object.
+
+   #+begin_src javascript
+   function getPostsByYear(nodes) {
+       var postsByYear = {}
+       for (var post of nodes) {
+          if (!(post.date in postsByYear)) {
+              postsByYear[post.date] = []
+          }
+          postsByYear[post.date].push(post)
+       }
+       return postsByYear
+   }
+   /*
+     i.e {2021: [...], 2020: [...]}
+   */
+   #+end_src
+
+   Using the Object.entries function, I'm able to access each of the key-value
+   pairs for the year-posts.
+
+   #+begin_src 
+  Object.entries(postsByYearList)
+        .reverse()
+        .map(([year, posts]) => (
+   #+end_src
+
