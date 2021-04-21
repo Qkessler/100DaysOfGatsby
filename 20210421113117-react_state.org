@@ -1,0 +1,48 @@
+#+title: React state
+#+roam_key: https://es.reactjs.org/docs/hooks-state.html
+#+roam_tags: programming javascript hooks web component setState
+
+Hooks are a new addition in React 16.8. They let you use state and other React
+features without writing a class. Pretty cool, huh?
+
+Before when using React states we had to use classes, and set up the initial
+state in the constructor, which is still very cumbersome. At least it is
+drawing from ES6 classes. 
+
+#+begin_src js
+  class Example extends React.Component {
+    constructor(props) {
+       super(props);
+       this.state = {
+          count: 0
+       };
+    }
+  }
+#+end_src
+
+Using the new =useState= React Hook, we are able to create state for our
+component and update it, while reducing the code to a simple line. It is part of
+the ='react'= package, so you are able to import them using:
+
+#+begin_src js
+  import React, { useState } from 'react'
+#+end_src
+
+It also uses array destructuring, which is pretty cool. Hooks *don't work*
+inside classes, but you can use them instead of writing classes. =set*=
+functions are setters for the state.
+
+#+begin_src js
+  function Example() {
+    // Declare a new state variable, which we'll call "count"
+    const [count, setCount] = useState(0)
+    return (<div></div>)
+  }
+
+  // We could also use function components declaring the closure.
+  const Example = ({props}) => {
+    // The initial value for the 'count' state is 0.
+    const [count, setCount] = useState(0)
+    return (<div></div>)
+  }
+#+end_src

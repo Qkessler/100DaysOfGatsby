@@ -51,6 +51,7 @@
   - [[#day-40-20210417][Day 40: 2021/04/17]]
   - [[#day-41-20210418][Day 41: 2021/04/18]]
   - [[#day-42-20210420][Day 42: 2021/04/20]]
+  - [[#day-43-20210421][Day 43: 2021/04/21]]
 
 ** Day 1: 2021/03/07
   The first day I created the repository and added the first project, starting
@@ -629,3 +630,12 @@ query ArchiveQuery {
         .map(([year, posts]) => (
    #+end_src
 
+** Day 43: 2021/04/21
+   Today I continued working on the archive page, getting its final touches.
+   Not flashy at all, but it never was the plan. The idea was to have a
+   simple list of posts for visitors to go through easily.
+
+   I also learned from the React state docs, and wrote a [[./20210421113117-react_state.org][note about it]]. I
+   got around buying the domain, and deploying the website using Gatsby Cloud.
+   As I said in previous days, the deployment process couldn't be easier and
+   the build time was =1:47= minutes, AMAZING!
