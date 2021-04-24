@@ -52,6 +52,7 @@
   - [[#day-41-20210418][Day 41: 2021/04/18]]
   - [[#day-42-20210420][Day 42: 2021/04/20]]
   - [[#day-43-20210421][Day 43: 2021/04/21]]
+  - [[#day-44-20210423][Day 44: 2021/04/23]]
 
 ** Day 1: 2021/03/07
   The first day I created the repository and added the first project, starting
@@ -639,3 +640,14 @@ query ArchiveQuery {
    got around buying the domain, and deploying the website using Gatsby Cloud.
    As I said in previous days, the deployment process couldn't be easier and
    the build time was =1:47= minutes, AMAZING!
+
+** Day 44: 2021/04/23
+   Today as a chill day in the 100DaysofGatsby I watched some of the
+   talks in the Gatsby Conf 2021. Pretty good stuff, I would recommend watching
+   it to anyone interested in the web and Jamstack.
+
+   I will finish and publish the notes about the conference in the later days.
+   I'm starting to wonder what to do in the 100Days, I might stop and continue
+   working with Flutter, 44 days is already pretty good, considering the main
+   project for it [[https://enriquekesslerm.com][has already been completed]].
+   
