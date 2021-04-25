@@ -7,7 +7,23 @@
   The 100DaysOfGatsby plan that I'm following was created by the Gatsby team,
   you can find it here: https://www.gatsbyjs.com/blog/tags/100-days-of-gatsby/
   
-** Days :TOC:
+** Conclusion
+   The 100DaysofGatsby has been an amazing experience all-round, and I couldn't
+   be happier to be able to say that I have learned a ton: React, Gatsby's way
+   of making the JAMStack work, org-mode flavored posts, some writing skills (I
+   feel like I'm getting better at writing in English).
+
+   On the other side, it feels that continuing for other 50 days to finish the
+   100 isn't the best way to put my time to work. The big project that I had in
+   mind when starting this 100DaysOfGatsby has already been completed
+   ([[https://enriquekesslerm.com]]) and I couldn't be prouder.
+
+   I highly encourage everyone that is interested in the web ecosystem to learn
+   a JAMStack framework and Gatsby is a great choice (Next.js is another good
+   one). Feel free to hit me up if any doubts arise from my process and
+   challenge!
+
+** Days
 - [[#100daysofgatsby-log][100DaysOfGatsby log]]
   - [[#day-1-20210307][Day 1: 2021/03/07]]
   - [[#day-2-20210308][Day 2: 2021/03/08]]
